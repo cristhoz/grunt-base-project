@@ -142,7 +142,7 @@
 
     (function _getQuestionName() {
       var scripts = document.getElementsByTagName('script');
-      
+
       for(var i = 0, len = scripts.length; i < len; i++) {
         var source = scripts[i].src;
 
@@ -230,7 +230,7 @@
             case '.':
               isElement = isElement && _valClass(validate[++i]);
               break;
-            default: 
+            default:
               isElement = isElement && _valElement(validate[i]);
               break;
           }
@@ -299,7 +299,7 @@
 
       return true;
     }
-    
+
     return false;
   };
 
@@ -315,7 +315,7 @@
     return false;
   };
 
-  Core.isObject = function(value, notEmpty) { 
+  Core.isObject = function(value, notEmpty) {
     notEmpty = (Core.isBoolean(notEmpty)) ? notEmpty : true;
 
     var type = Core.getType(value);
@@ -338,7 +338,7 @@
       var computed = window.getComputedStyle(el);
       var display = computed.display != 'none';
       var visibility = computed.visibility == 'visible';
-      
+
       return display && visibility;
     }
   };
@@ -582,7 +582,7 @@
         }
       }
       return x;
-    }).join(''); 
+    }).join('');
 
     return res;
   };
@@ -738,7 +738,7 @@
       { ID: 11, SMALL_NAME: 'Nov', LONG_NAME: 'Noviembre' },
       { ID: 12, SMALL_NAME: 'Dic', LONG_NAME: 'Diciembre' }
     ];
-    
+
     //Days
     parent.dataDays = [];
 
@@ -776,7 +776,7 @@
     for(var i = 0, len = varibles.length; i < len; i++) {
       calls[varibles[i]] = null;
     }
-    
+
     varibles.forEach(function(el, i, arr) {
       calls[el] = function(out) {
         if(!Core.isNULL(out) && !Core.isUndefined(out)) {
@@ -819,11 +819,11 @@
       if(typeof xhr.upload === 'object') {
         xhr.upload.addEventListener('progress', function(e) {
           if(Core.isFunction(_options.progress)) {
-            _options.progress(e); 
+            _options.progress(e);
           }
         }, false);
       }
-      
+
       xhr.addEventListener('load', function(e) {
         var response = e.target.response || xhr.responseText;
 
@@ -894,7 +894,7 @@
 
     var getSearch = function() {
       var search = location.search;
-      
+
       if(search.trim() == '') {
         return;
       }
@@ -1160,7 +1160,7 @@
           }
         }
       });
-      
+
       if(Core.isFunction(_callbacks.error)) {
         try {
           _callbacks.error(res);
@@ -1211,7 +1211,7 @@
         $trigger.addEventListener('click', function(e) {
           e.stopPropagation();
           e.preventDefault();
-          
+
           _validate();
         });
       }
@@ -1380,7 +1380,7 @@
             } else if(!isNum && isString) {
               string = value[1];
             }
-            
+
             value = value[0];
           }
 
@@ -1404,7 +1404,7 @@
                 } else if(!aIsNum && aIsString) {
                   aString = aValue[1];
                 }
-                
+
                 aValue = aValue[0];
               }
 
