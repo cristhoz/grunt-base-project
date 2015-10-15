@@ -43,5 +43,5 @@ April 6, 2015
 * GruntJS configured and structure of the folders.
 
 ##Dependecies
-* __[Handlebars.js](https://github.com/wycats/handlebars.js/)__ v3.0.0
+* __[Handlebars.js](https://github.com/wycats/handlebars.js/)__ v4.0.2
 * __[editorconfig.org](http://editorconfig.org/)__
