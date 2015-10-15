@@ -57,6 +57,39 @@
 	top: 50%;
 }
 
+/**
+ * Flex Box
+ */
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}
+
+@mixin flex-flow($values) {
+  -webkit-flex-flow: $values;
+  flex-flow: $values;
+}
+
 
 /**
  * Animation
@@ -165,7 +198,7 @@ $small_screen-only: "#{$screen} and (min-width: 960px}) and (max-width: 1023px)"
 $screen-up: "#{$screen} and (min-width: 1024px)" !default;
 $screen-down: "#{$screen} and (max-width: 1024px)" !default;
 
-@mixin responsive($media) { 
+@mixin responsive($media) {
 	@media #{$media} {
 		@content;
 	}
