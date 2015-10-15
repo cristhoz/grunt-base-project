@@ -1,0 +1,12 @@
+{
+  "src_folder": "./source",
+  "dist_folder": "./assets",
+  "templates": "./tasks/templates",
+  "sass": {
+    "dist": "/css/",
+    "src": "/sass/",
+    "ext_dist": ".css",
+    "ext_src": ".sass",
+    "files": ["style"]
+  }
+}

@@ -1,0 +1,15 @@
+$arrow_left_cal: "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDEwIDI4Ij48cGF0aCBkPSJNMTAgN3YxNHEwIC40MDYtLjI5Ny43MDNUOSAyMnQtLjcwMy0uMjk3bC03LTdRMSAxNC40MDYgMSAxNHQuMjk3LS43MDNsNy03UTguNTk0IDYgOSA2dC43MDMuMjk3VDEwIDd6IiBmaWxsPSIjZmZmIi8+PC9zdmc+";
+$arrow_right_cal: "data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDEwIDI4Ij48cGF0aCBkPSJNOSAxNHEwIC40MDYtLjI5Ny43MDNsLTcgN1ExLjQwNiAyMiAxIDIydC0uNzAzLS4yOTdUMCAyMVY3cTAtLjQwNi4yOTctLjcwM1QxIDZ0LjcwMy4yOTdsNyA3UTkgMTMuNTk0IDkgMTR6IiBmaWxsPSIjZmZmIi8+PC9zdmc+";
+
+%icons {
+	background-repeat: no-repeat;
+}
+
+%icons_arrow_left_cal {
+	background-image: url($arrow_left_cal);
+	@extend %icons;
+}
+%icons_arrow_right_cal {
+	background-image: url($arrow_right_cal);
+	@extend %icons;
+}

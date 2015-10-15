@@ -1,0 +1,11 @@
+<div class="ui_alerts_wrap">
+	<a href="javascript://" class="ui_alerts_close  js__close_alert">cerrar</a>
+	<div class="ui_alerts_content">
+		{{#if title}}
+		<h2 class="t_oops">¡OOPS!</h2>
+		{{else}}
+		<h2 class="t_yeiii">¡YEIII!</h2>
+		{{/if}}
+		{{#if html}}<p>{{{html}}}</p>{{/if}}
+	</div>
+</div>

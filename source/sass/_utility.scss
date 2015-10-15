@@ -1,0 +1,183 @@
+
+/**
+ * Transitions in CSS3
+ */
+@mixin transition($params...) {
+	-webkit-transition: $params;
+	transition: $params;
+}
+
+/**
+ * Transforms origin in CSS3
+ */
+@mixin transform-origin($x, $y) {
+	-webkit-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	transform-origin: $x $y;
+}
+
+/**
+ * Transforms in CSS3
+ */
+@mixin transform($params) {
+	-webkit-transform: $params;
+	-ms-transform: $params;
+	transform: $params;
+}
+
+/**
+ * Center floating content
+ */
+@mixin centerFloating($width, $height, $x, $y) {
+	position: absolute;
+	width: unquote($width + "px");
+	height: unquote($height + "px");
+	margin: unquote(-(($height / 2) - $y) + "px") 0 0 unquote(-(($width / 2) - $x) + "px");
+	top: 50%;
+	left: 50%;
+}
+
+/**
+ * Center floating content in X
+ */
+@mixin xFloating($width, $x) {
+	position: absolute;
+	width: unquote($width + "px");
+	margin-left: unquote(-(($width / 2) - $x) + "px");
+	left: 50%;
+}
+
+/**
+ * Center floating content
+ */
+@mixin yFloating($height, $y) {
+	position: absolute;
+	height: unquote($height + "px");
+	margin-top: unquote(-(($height / 2) - $y) + "px");
+	top: 50%;
+}
+
+
+/**
+ * Animation
+ */
+@mixin animation($animate...) {
+	$max: length($animate);
+	$animations: "";
+
+	@for $i from 1 through $max {
+		$animations: #{$animations + nth($animate, $i)};
+
+		@if $i < $max {
+			$animations: #{$animations + ", "};
+		}
+	}
+
+	-webkit-animation: $animations;
+	animation: $animations;
+}
+
+@mixin keyframes($animationName) {
+	@-webkit-keyframes #{$animationName} {
+		@content;
+	}
+
+	@keyframes #{$animationName} {
+		@content;
+	}
+}
+
+@mixin placeholder() {
+	::-webkit-input-placeholder {
+		@content;
+	}
+
+	::-moz-placeholder {
+		@content;
+	}
+
+	:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin selection() {
+	::selection {
+		@content;
+	}
+
+	::-moz-selection {
+		@content;
+	}
+}
+
+/**
+ * User select
+ */
+@mixin userSelect() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/**
+ * Font-face;
+ */
+@mixin fontface($name, $weight, $source, $hash) {
+	@font-face {
+		font-family: $name;
+		src: url("../fonts/" + $source + ".woff" + $hash) format("woff"),
+		     url("../fonts/" + $source + ".ttf" + $hash) format("truetype");
+		font-weight: $weight;
+		font-style: normal;
+	}
+}
+
+/**
+ * Responsive
+ */
+// Media Queries
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$mobile-up: $screen !default;
+$mobile-down: "#{$screen} and (max-width: 320px)" !default;
+
+$phablet-up: "#{$screen} and (min-width: 480px)" !default;
+$phablet-down: "#{$screen} and (max-width: 480px)" !default;
+$phablet-only: "#{$screen} and (min-width: 480px) and (max-width: 639px}" !default;
+
+$small_tablet-up: "#{$screen} and (min-width: 640px)" !default;
+$small_tablet-down: "#{$screen} and (max-width: 640px)" !default;
+$small_tablet-only: "#{$screen} and (min-width: 640px) and (max-width: 768px)" !default;
+
+$tablet-up: "#{$screen} and (min-width: 768px)" !default;
+$tablet-down: "#{$screen} and (max-width: 768px)" !default;
+$tablet-only: "#{$screen} and (min-width: 768px) and (max-width: 959px)" !default;
+
+$small_screen-up: "#{$screen} and (min-width: 960px)" !default;
+$small_screen-down: "#{$screen} and (max-width: 960px)" !default;
+$small_screen-only: "#{$screen} and (min-width: 960px}) and (max-width: 1023px)" !default;
+
+$screen-up: "#{$screen} and (min-width: 1024px)" !default;
+$screen-down: "#{$screen} and (max-width: 1024px)" !default;
+
+@mixin responsive($media) { 
+	@media #{$media} {
+		@content;
+	}
+}
+
+/**
+ * Position elements
+ */
+.f_left {
+	float: left;
+}
+
+.f_right {
+	float: right;
+}

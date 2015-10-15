@@ -1,0 +1,14 @@
+{{#items}}
+${{className}}: "data:image/svg+xml;charset=utf-8{{#isBase64}};base64{{/isBase64}},{{encoded}}";
+{{/items}}
+
+%icons {
+	background-repeat: no-repeat;
+}
+
+{{#items}}
+%icons_{{className}} {
+	background-image: url(${{className}});
+	@extend %icons;
+}
+{{/items}}

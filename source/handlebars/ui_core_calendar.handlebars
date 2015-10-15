@@ -1,0 +1,66 @@
+<div>
+	<table>
+		<tr>
+			<td class="cal__nav_months">
+				{{#if prev_month}}<a href="javascript://" class="b_left  js__prev_month">Mes anterior</a>{{/if}}
+			</td>
+			<td class="cal__head">
+				<table align="center">
+					<tr>
+						<td class="cal__head_month">
+							{{#if options.change_month}}
+							<select class="js__change_month">
+							{{#each month}}
+								<option value="{{value}}" {{#if is_active}}selected="true"{{/if}}>{{month}}</option>
+							{{/each}}
+							</select>
+							{{else}}
+								{{month}}
+							{{/if}}
+						</td>
+						<td class="cal__head_year">
+							{{#if options.change_year}}
+							<select class="js__change_year">
+							{{#each year}}
+								<option value="{{value}}" {{#if is_active}}selected="true"{{/if}}>{{year}}</option>
+							{{/each}}
+							</select>
+							{{else}}
+								{{year}}
+							{{/if}}
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td class="cal__nav_months">
+				{{#if next_month}}<a href="javascript://" class="b_right  js__next_month">Mes siguiente</a>{{/if}}
+			</td>
+		</tr>
+		<tr>
+			<td class="cal__body" colspan="3">
+				<table align="center">
+					<thead>
+						<tr>
+						{{#each options.label_days}}
+							<th>{{.}}</th>
+						{{/each}}
+						</tr>
+					</thead>
+					<tbody>
+					{{#each day}}
+						<tr>
+						{{#each .}}
+							<td {{#if is_full}}class="is_full {{#if is_active}}is_active{{/if}} {{#if is_current}}is_current{{/if}}"{{/if}}>
+								{{#if not_restricted}}<a href="javascript://" class="js__select_date  asdasdas" data-value="{{value}}">{{else}}<span>{{/if}}
+								{{day}}
+								{{#if not_restricted}}</a>{{else}}</span>{{/if}}
+							</td>
+						{{/each}}
+						</tr>
+					{{/each}}
+					</tbody>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
