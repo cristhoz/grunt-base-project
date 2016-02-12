@@ -1,5 +1,5 @@
-%sprites {
-	background-image: url(../../../assets/images/s_hello_a.png);
+%sprites_hello_a {
+	background-image: url(../images/s_hello_a.png);
 	background-repeat: no-repeat;
 }
 
@@ -7,29 +7,29 @@
 	width: 18px;
 	height: 30px;
 	background-position: -448px -431px;
-	@extend %sprites;
+	@extend %sprites_hello_a;
 }
 %sprite_arrow2 {
 	width: 18px;
 	height: 30px;
 	background-position: -466px -431px;
-	@extend %sprites;
+	@extend %sprites_hello_a;
 }
 %sprite_b_globo {
 	width: 236px;
 	height: 230px;
 	background-position: 0px -431px;
-	@extend %sprites;
+	@extend %sprites_hello_a;
 }
 %sprite_b_modal_video {
 	width: 746px;
 	height: 431px;
 	background-position: 0px 0px;
-	@extend %sprites;
+	@extend %sprites_hello_a;
 }
 %sprite_l_luki {
 	width: 212px;
 	height: 175px;
 	background-position: -236px -431px;
-	@extend %sprites;
+	@extend %sprites_hello_a;
 }

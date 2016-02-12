@@ -1,0 +1,17 @@
+%sprites_all_site {
+	background-image: url(../images/s_all_site.png);
+	background-repeat: no-repeat;
+}
+
+%sprite_b_globos {
+	width: 236px;
+	height: 230px;
+	background-position: 0px 0px;
+	@extend %sprites_all_site;
+}
+%sprite_rotate_ccw {
+	width: 16px;
+	height: 16px;
+	background-position: -236px 0px;
+	@extend %sprites_all_site;
+}

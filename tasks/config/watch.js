@@ -17,8 +17,8 @@ module.exports = function(grunt) {
       tasks: ['sass', 'notify:sass']
     },
     sprites: {
-      files: ['source/sprites/*.png'],
-      tasks: ['sprite:all', 'notify:sprites']
+      files: ['source/sprites/**/*.png'],
+      tasks: ['sprite', 'notify:sprites']
     },
     svgs: {
       files: ['source/svgs/*.svg'],

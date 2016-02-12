@@ -1,5 +1,5 @@
-%sprites {
-	background-image: url(../images/sp_all_site.png);
+%sprites_{{title}} {
+	background-image: url(../images/{{image_name}});
 	background-repeat: no-repeat;
 }
 
@@ -8,7 +8,6 @@
 	width: {{px.width}};
 	height: {{px.height}};
 	background-position: {{px.offset_x}} {{px.offset_y}};
-	@extend %sprites;
+	@extend %sprites_{{../title}};
 }
-
 {{/sprites}}
