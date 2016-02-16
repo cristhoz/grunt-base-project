@@ -36,7 +36,5 @@ module.exports = function(grunt) {
   var getRegisters = getFiles('./tasks/register/');
 
   invokeFiles(getConfigs);
-  //invokeFiles(getRegisters);
-
-  grunt.registerTask('default', ['watch']);
+  invokeFiles(getRegisters);
 };
