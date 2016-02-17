@@ -50,20 +50,7 @@ $font-arial: Arial, Helvetica, sans-serif;
 /*------------------------------------*\
 	$ICONS_FONT
 \*------------------------------------*/
-[class^="icon__"],
-[class*=" icon__"] {
-	&:before {
-		font-family: "icomoon";
-		speak: none;
-		font-style: normal;
-		font-weight: normal;
-		font-variant: normal;
-		text-transform: none;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-}
+@import "iconsfont";
 
 
 

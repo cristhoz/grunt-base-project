@@ -1,6 +1,7 @@
 {
   "name": "grunt-base-project",
-  "version": "1.1.0",
+  "version": "2.0.0",
+  "license": "MIT",
   "description": "It is a base structure for projects, as GruntJS in task management",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +11,15 @@
     "url": "https://github.com/cristhoz/grunt-base-project"
   },
   "keywords": [
-    "front-end"
+    "front-end",
+    "Grunt",
+    "Tasks"
   ],
   "author": "Cristian E. De la Hoz",
   "bugs": {
-    "url": "https://github.com/cristhoz/base_projects/issues"
+    "url": "https://github.com/cristhoz/grunt-base-project/issues"
   },
-  "homepage": "https://github.com/cristhoz/base_projects",
+  "homepage": "https://github.com/cristhoz/grunt-base-project",
   "devDependencies": {
     "babel-preset-es2015": "^6.5.0",
     "grunt": "^0.4.5",
@@ -29,6 +32,7 @@
     "grunt-notify": "^0.4.3",
     "grunt-spritesmith": "^6.3.0",
     "grunt-svgzr": "^0.3.3",
+    "grunt-webfont": "^1.1.1",
     "handlebars": "^4.0.5"
   }
 }

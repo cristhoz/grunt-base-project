@@ -1,11 +1,18 @@
 #Base for projects
 It is a base structure for projects, as GruntJS in task management.
 
-##Install
-__SASS:__ required to be installed before use with GruntJS, here are the instructions to install: [http://sass-lang.com/install](http://sass-lang.com/install).
+##For Install
+__SASS:__ required to be installed before use with GruntJS, here are the instructions to install: [http://sass-lang.com/install](https://github.com/sapegin/grunt-webfont#installation).
+
+__FONTFORGE:__ required to be installed before use with grunt-webfont, require in svg2iconFont. here are the instructions to install: [https://github.com/sapegin/grunt-webfont#installation](https://github.com/sapegin/grunt-webfont#installation).
+
+##Run register taks
+
 
 ##Changelog
 ###2.0.0
+* Multiple sprites images create.
+* SVG icons convert in Webfont.
 * Is modify Grunt.js:
   * Files and folders are organized for this version.
   * The automatic loading for tasks and registers is developed.
