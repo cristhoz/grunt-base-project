@@ -30,7 +30,7 @@ directories.forEach(function(el) {
   config[el] = {
     src: 'source/sprites/' + el + '/*.png',
     dest: 'assets/images/s_' + el + '.png',
-    destCss: 'source/sass/sprites/_sprites_' + el + '.scss',
+    destCss: 'source/sass/partials/sprites/_sprites_' + el + '.scss',
     algorithm: 'binary-tree',
     cssTemplate: function (data) {
       var view = {

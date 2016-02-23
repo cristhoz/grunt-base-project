@@ -24,7 +24,7 @@
 			background-repeat: no-repeat;
 			background-size: 6px;
 			border-radius: 100%;
-			@include transition(background-color 350ms);
+			transition: background-color 350ms;
 
 			&:hover {
 				background-color: #3e1c05;
@@ -92,7 +92,7 @@
 				text-decoration: none;
 				color: #6f562d;
 				background-color: #f8f7f6;
-				@include transition(background-color 350ms);
+				transition: background-color 350ms;
 
 				&:hover {
 					background-color: #f7f4dd;
@@ -137,7 +137,7 @@
 		left: 50%;
 		padding: 60px 50px;
 		background-color: #fff;
-		@include transform(translate(-50%, -50%));
+		transform: translate(-50%, -50%);
 	}
 
 	.ui_alerts_content {

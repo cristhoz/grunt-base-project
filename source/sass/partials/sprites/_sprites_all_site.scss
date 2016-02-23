@@ -1,0 +1,53 @@
+%sprites_all_site {
+	background-image: url(../images/s_all_site.png);
+	background-repeat: no-repeat;
+}
+
+.sprite_button_play {
+	width: 250px;
+	height: 250px;
+	background-position: 0px 0px;
+	@extend %sprites_all_site;
+}
+.sprite_button_play_hover {
+	width: 250px;
+	height: 250px;
+	background-position: -250px 0px;
+	@extend %sprites_all_site;
+}
+.sprite_button_share_cover {
+	width: 35px;
+	height: 33px;
+	background-position: -370px -250px;
+	@extend %sprites_all_site;
+}
+.sprite_cover_alert_fail {
+	width: 79px;
+	height: 76px;
+	background-position: -162px -250px;
+	@extend %sprites_all_site;
+}
+.sprite_cover_alert_success {
+	width: 79px;
+	height: 76px;
+	background-position: -241px -250px;
+	@extend %sprites_all_site;
+}
+.sprite_cover_border_body {
+	width: 50px;
+	height: 48px;
+	background-position: -320px -250px;
+	@extend %sprites_all_site;
+}
+.sprite_cover_green {
+	width: 81px;
+	height: 77px;
+	background-position: 0px -250px;
+	@extend %sprites_all_site;
+}
+.sprite_cover_green_not_shadow {
+	width: 81px;
+	height: 77px;
+	background-position: -81px -250px;
+	@extend %sprites_all_site;
+}

@@ -10,12 +10,15 @@ __FONTFORGE:__ required to be installed before use with grunt-webfont, require i
 
 ##Run register taks
 
-
 ##Changelog
 ###2.0.0
+February 23, 2016
+
 * Multiple sprites images create.
 * SVG icons convert in Webfont.
 * Compass is supported.
+* New folder structures in SCSS files
+* Autoprefixer is supported.
 * Is modify Grunt.js:
   * Files and folders are organized for this version.
   * The automatic loading for tasks and registers is developed.

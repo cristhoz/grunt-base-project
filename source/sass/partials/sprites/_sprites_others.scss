@@ -1,0 +1,143 @@
+%sprites_others {
+	background-image: url(../images/s_others.png);
+	background-repeat: no-repeat;
+}
+
+.sprite_cover_orange {
+	width: 81px;
+	height: 77px;
+	background-position: -81px -245px;
+	@extend %sprites_others;
+}
+.sprite_cover_orange_not_shadow {
+	width: 81px;
+	height: 77px;
+	background-position: -243px -245px;
+	@extend %sprites_others;
+}
+.sprite_cover_red {
+	width: 81px;
+	height: 77px;
+	background-position: -162px -245px;
+	@extend %sprites_others;
+}
+.sprite_cover_red_not_shadow {
+	width: 81px;
+	height: 77px;
+	background-position: -107px -154px;
+	@extend %sprites_others;
+}
+.sprite_cover_yellow {
+	width: 81px;
+	height: 77px;
+	background-position: -188px -154px;
+	@extend %sprites_others;
+}
+.sprite_cover_yellow_not_shadow {
+	width: 81px;
+	height: 77px;
+	background-position: 0px -245px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_brush {
+	width: 58px;
+	height: 58px;
+	background-position: -116px -322px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_brush_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -174px -322px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_check {
+	width: 58px;
+	height: 58px;
+	background-position: -337px 0px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_check_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -269px -154px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_cover {
+	width: 58px;
+	height: 58px;
+	background-position: 0px -322px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_cover_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -232px -322px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_elements {
+	width: 58px;
+	height: 58px;
+	background-position: -337px -58px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_elements_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -337px -116px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_music {
+	width: 58px;
+	height: 58px;
+	background-position: -337px -174px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_music_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -337px -232px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_text {
+	width: 58px;
+	height: 58px;
+	background-position: -230px -91px;
+	@extend %sprites_others;
+}
+.sprite_creator_nav_text_hover {
+	width: 58px;
+	height: 58px;
+	background-position: -58px -322px;
+	@extend %sprites_others;
+}
+.sprite_creator_options_add {
+	width: 24px;
+	height: 24px;
+	background-position: -361px -290px;
+	@extend %sprites_others;
+}
+.sprite_creator_options_remove {
+	width: 24px;
+	height: 24px;
+	background-position: -337px -290px;
+	@extend %sprites_others;
+}
+.sprite_creator_ribon_left {
+	width: 107px;
+	height: 91px;
+	background-position: 0px -154px;
+	@extend %sprites_others;
+}
+.sprite_creator_ribon_right {
+	width: 107px;
+	height: 91px;
+	background-position: -230px 0px;
+	@extend %sprites_others;
+}
+.sprite_home_footer_packages {
+	width: 230px;
+	height: 154px;
+	background-position: 0px 0px;
+	@extend %sprites_others;
+}

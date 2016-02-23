@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     },
     sass: {
       files: ['source/sass/**/*.scss'],
-      tasks: ['sass', 'notify:sass']
+      tasks: ['sass', 'postcss:dist', 'notify:sass']
     },
     babel: {
       files: ['source/js/**/*'],

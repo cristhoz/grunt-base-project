@@ -4,5 +4,5 @@
  */
 
 module.exports = function(grunt) {
-  grunt.registerTask('create_sprite', ['sprite', 'notify:sprites']);
+  grunt.registerTask('sprites', ['sprite', 'sass_globbing:dev', 'notify:sprites']);
 };
