@@ -10,7 +10,7 @@ module.exports = function(grunt) {
     dev: {
       options: {
         sourcemap: 'none',
-        style: 'compressed'
+        compass: config.sass.compass
       },
       files: files
     }

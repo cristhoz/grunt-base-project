@@ -1,31 +1,5 @@
 
 /**
- * Transitions in CSS3
- */
-@mixin transition($params...) {
-	-webkit-transition: $params;
-	transition: $params;
-}
-
-/**
- * Transforms origin in CSS3
- */
-@mixin transform-origin($x, $y) {
-	-webkit-transform-origin: $x $y;
-	-ms-transform-origin: $x $y;
-	transform-origin: $x $y;
-}
-
-/**
- * Transforms in CSS3
- */
-@mixin transform($params) {
-	-webkit-transform: $params;
-	-ms-transform: $params;
-	transform: $params;
-}
-
-/**
  * Center floating content
  */
 @mixin centerFloating($width, $height, $x, $y) {
